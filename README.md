@@ -56,10 +56,7 @@ A full-featured social networking application built with **Flutter** for the fro
 * Full WebRTC integration supporting 1v1 calls and multi-peer group video calls.
 
 ### 7. Administrative Controls & Root Admin Account
-* Pre-seeded root administrator account available at:
-  * **Email**: `admin@social.app`
-  * **Username**: `المسئوول`
-  * **Password**: `adminPass`
+* Supports pre-seeded root administrator accounts (configured on the backend).
 * Root administrators are granted cascading permissions:
   * Delete any post or short video.
   * Delete any public chat message.
@@ -75,7 +72,7 @@ A full-featured social networking application built with **Flutter** for the fro
 
 1. Navigate to the backend directory:
    ```bash
-   cd c:\devlopment\social-app\backend
+   cd backend
    ```
 2. Install dependencies:
    ```bash
@@ -93,7 +90,7 @@ A full-featured social networking application built with **Flutter** for the fro
    ```bash
    ./start_ngrok.sh
    ```
-   *(Copy the generated HTTPS address, e.g., `https://resistant-fondly-stylized.ngrok-free.dev`)*
+   *(Copy the generated HTTPS address, e.g., `https://your-subdomain.ngrok-free.dev`)*
 
 ---
 
@@ -101,7 +98,7 @@ A full-featured social networking application built with **Flutter** for the fro
 
 1. Navigate to the Flutter project directory:
    ```bash
-   cd c:\devlopment\social_app
+   cd social_app
    ```
 2. Open the `.env` file and configure the backend endpoints using your ngrok URL:
    ```env
